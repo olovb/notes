@@ -2,6 +2,8 @@
 Notes on Coding Practices
 =========================
 
+> "Q: Do developers have superstitions? A: Yes, but they're called 'best practices'." --Unknown origin
+
 The Very Basics
 ---------------
 Write S.O.L.I.D. code.
