@@ -5,6 +5,10 @@ Patterns
 Immutable Objects
 -----------------
 
+The state of an immutable object never changes. 
+
+Since they *cannot be corrupted by thread interference* and *do not have to be synchronized*, immutable objects are especially useful in multi-threaded programming.
+
 * Don't let subclasses override methods. (Make the class final or make the constructor final and provide factory methods to create instances.)
 * Make all fields private and final.
 * Defensively copy referenced mutable objects stored within the immutable object, objects that are _passed to its constructors_ or that are _returned from its methods_.
@@ -13,6 +17,8 @@ Immutable Objects
 
 Singleton
 ---------
+
+A singleton is a class that *has, at most, one single instance*.
 
 ### Conventional Approach
 
