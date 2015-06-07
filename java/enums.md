@@ -8,9 +8,9 @@ An enum represents *a set of predefined constants*. An __enum declaration__ defi
 Enum Constants
 --------------
 
-The body of an enum declaration normally contains a list of __enum constants__, each defining an instance of the enum type. The only instances of an enum type are the *constants declared in its enum constant list*. 
+The body of an enum declaration normally contains a list of __enum constants__, each defining an instance of the enum type. The only existing instances of an enum type are the constants declared in its enum constant list. 
 
-An enum constant may *optionally have a class body*, in which case the body represents an anonymous class that extends the enclosing enum type. Unless at least one enum constant has a class body the enum type is implicitly final.
+An enum constant may *optionally have a class body*, in which case the body corresponds to an anonymous class that extends the enclosing enum type. Unless at least one enum constant has a class body the enum type is implicitly final.
 
 An enum type has *one public static final field for each enum constant*, with the same name as the enum constant.
 
@@ -20,7 +20,7 @@ Instance Construction
 
 An enum constructor cannot be explicitly invoked (not even through reflective instantiation), and must be declared private. (In an enum declaration, a constructor declaration with no access modifiers is private.) Enum instances cannot be created by the `clone()` method nor can duplicate instances be created via deserialization.
 
-Unlike regular class constructors, an enum constructor *may not contain a superclass constructor statement*.
+Unlike regular class constructors, an enum constructor *may not contain a superclass constructor invokation*.
 
 A *private default constructor is implicitly declared* if an enum has no explicitly declared constructors.
 
