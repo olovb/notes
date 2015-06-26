@@ -12,7 +12,7 @@ A class or interface that is *parameterized over types* is a __generic type__, i
 
 A generic type is instantiatied by a __generic type invokation__, in which one or more __type arguments__ are passed to the generic type, yielding a __parameterized type__. *Any non-primitive type can be used as a type argument*.
 
-In addition to generic types, static and non-static generic methods are also allowed, as well as generic class constructors. 
+In addition to generic types, static and non-static __generic methods__ are also allowed, as well as __generic class constructors__. 
 
 
 Raw Types
