@@ -22,6 +22,10 @@ There are 3 types of inner classes:
 
 A class may be incomplete, i.e. leaving some parts undeclared, in which case the class is called an __abstract class__.
 
+A generic class declaration specifies the __type parameters__ after the type name:
+
+    class Klass<T1, T2, …, TN> { … }
+
 
 Naming
 ------
@@ -75,6 +79,10 @@ The __type__ of a constructor is its signature in combination with the `throws` 
 The first line of a constructor may be an __explicit constructor invokation__, i.e. an invocation of the form `this(…)` of another constructor of the class, or an invokation of the form `super(…)` of a direct superclass constructor. Unless a constructor begins with an explicit constructor invokation, the constructor implicitly begins with `super()`.
 
 It is legal to use `return` statements in constructors as long as they don't include expressions.
+
+Type parameters for generic constructors are put before the constructor's name:
+
+    <K, V> Klass(…) { … }  // Klass' constructor.
 
 
 Initializers

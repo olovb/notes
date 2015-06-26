@@ -18,6 +18,15 @@ A method has a __signature__, which is its
 
 Normally, only final methods should be called from constructors. (If a constructor calls a non-final method, a subclass may redefine that method with surprising or undesirable results.)
 
+Type parameters for generic methods are put before the method's return type:
+
+    static <K, V> Type methodx(…) { … }
+    public <K, V> Type methody(…) { … }
+
+In a generic method call, the type argument may optionally be specified with a __type witness__ before the name of the method.
+
+    Klass.<Type>method(…)
+
 
 In Interfaces
 -------------

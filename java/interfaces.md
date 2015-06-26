@@ -10,6 +10,10 @@ An interface is *implicitly abstract*. A member interface is *implicitly static*
 
 An interface that has no field or method is known as a __marker interface__. Examples are `Serializable` and `Cloneable`.
 
+A generic interface declaration specifies the __type parameters__ after the type name:
+
+    interface Foo<T1, T2, …, TN> { … }
+
 
 Naming
 ------
